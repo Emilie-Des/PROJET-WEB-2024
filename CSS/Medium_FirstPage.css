@@ -15,6 +15,18 @@ h2 {
 .bouton1 {
     background-color: #ffa175;
     color: white;
+    font-size: 25px;
+    text-align: center;
+    border-radius: 36px; 
+    width: 230px;
+    height: 68px;
+    padding: 10px 10px;
+    text-decoration: none;
+}
+.bouton2 {
+    background-color:#f8cfc6;
+    color: #af3557;
+    font-size: 25px;
     text-align: center;
     border-radius: 36px; 
     width: 230px;
