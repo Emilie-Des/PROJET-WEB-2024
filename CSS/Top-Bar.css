@@ -11,6 +11,12 @@
     width: 70px;
     height: 80px;   
 }
+.logo {
+    display: flex;
+    align-items: center;
+    margin-right: 8px;
+    font-weight: bold;
+}
 
 .navigation ul {
     list-style: none;             
