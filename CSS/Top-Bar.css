@@ -11,6 +11,10 @@
     src: url(../fonts/gliker/Gliker-Black.woff2);
 }
 
+body{
+    margin :0;
+}
+
 .top-bar {
     background-color: var(--mauve);
     color: var(--jaune);
@@ -56,8 +60,4 @@ nav li {
 nav a {
     color: var(--jaune);
     text-decoration: none;
-}
-
-body{
-    margin :0;
 }
