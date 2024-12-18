@@ -1,0 +1,16 @@
+.top-bar {
+    background-color: #af3557;
+    color: #ffd483;
+    width: 100%;
+    /* padding: 15px 20px;           */
+    display: flex;               
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+.logo img {
+    width: 58px;
+    height: 48px;
+    top: 26px;
+    left: 381px;    
+}
