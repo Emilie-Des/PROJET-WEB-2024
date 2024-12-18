@@ -54,16 +54,6 @@ p {
     padding: 10px 10px;
     text-decoration: none;
 }
-.bouton2 {
-    background-color:#f8cfc6;
-    color: #af3557;
-    font-size: 25px;
-    text-align: center;
-    border-radius: 50px; 
-    width: 200px;
-    padding: 10px 30px;
-    text-decoration: none;
-}
 
 .bouton2 {
     display: flex;
