@@ -1,37 +1,67 @@
-.top-bar {
-    background-color: #af3557;
-    color: #ffd483;
-    width: 100%;
-    display: flex;               
-    justify-content: space-between; 
-    align-items: center; 
+:root{
+    --mauve: #af3557;
+    --jaune: #ffd483;
+    --rose: #f7838d;
+    --rose_pale: #f8cfc6;
+    --orange: #ffa175;
 }
 
-.logo img {
-    width: 70px;
-    height: 80px;   
+@font-face {
+    font-family: marige;
+    src: url(../fonts/MarigeDemoRegular.ttf);
 }
+@font-face {
+    font-family: gliker;
+    src: url(../fonts/gliker/Gliker-Black.woff2);
+}
+
+.top-bar {
+    background-color: var(--mauve);
+    color: var(--jaune);
+    padding: 0 20px;
+    display: flex;               
+    justify-content: space-between; 
+    align-items: center;
+    font-family: gliker;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
 .logo {
     display: flex;
     align-items: center;
-    margin-right: 8px;
-    font-weight: bold;
 }
 
-.navigation ul {
+.logo img {
+    width: 50px;
+    height: 50px;
+    padding-bottom: 10px;  
+}
+
+#nom {
+    margin: 0 10px;
+}
+
+#mi {
+    color: white;
+}
+
+nav ul {
     list-style: none;             
     margin: 0;
     padding: 0;
-    display: flex;                
+    display: flex;
 }
 
-.navigation li {
-    margin: 0 15px;               
+nav li {
+    margin: 0 15px;
 }
 
-.navigation a {
-    color: #ffd483;                  
-    font-size: 20px;       
-    font-weight: bold;
-    font-family: Gliker;
+nav a {
+    color: var(--jaune);
+    text-decoration: none;
+}
+
+body{
+    margin :0;
 }
