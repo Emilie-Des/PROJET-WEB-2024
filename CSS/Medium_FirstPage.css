@@ -1,10 +1,30 @@
-h1 {
-    text-align: center;
-    color: #f7838d;
+:root{
+    --mauve: #af3557;
+    --jaune: #ffd483;
+    --rose: #f7838d;
+    --rose_pale: #f8cfc6;
+    --orange: #ffa175;
 }
 
-h2 {
+@font-face {
+    font-family: more_sugar;
+    src: url(../fonts/more-sugar.regular.ttf);
+}
+
+@font-face {
+    font-family: poppins;
+    src: url(../fonts/poppins/Poppins-Regular.ttf);
+}
+
+h1 {
     text-align: center;
+    color: var(--rose);
+    font-family: more_sugar;
+}
+
+p {
+    text-align: center;
+    font-family: poppins;
 }
 
 .button-container {
@@ -13,7 +33,7 @@ h2 {
 }
 
 .bouton1 {
-    background-color: #ffa175;
+    background-color: var(--orange);
     color: white;
     text-align: center;
     border-radius: 36px; 

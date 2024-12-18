@@ -7,10 +7,6 @@
 }
 
 @font-face {
-    font-family: marige;
-    src: url(../fonts/MarigeDemoRegular.ttf);
-}
-@font-face {
     font-family: gliker;
     src: url(../fonts/gliker/Gliker-Black.woff2);
 }
