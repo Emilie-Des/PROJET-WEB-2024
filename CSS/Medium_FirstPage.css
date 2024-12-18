@@ -1,10 +1,4 @@
-:root{
-    --mauve: #af3557;
-    --jaune: #ffd483;
-    --rose: #f7838d;
-    --rose_pale: #f8cfc6;
-    --orange: #ffa175;
-}
+
 
 @font-face {
     font-family: more_sugar;
@@ -17,50 +11,89 @@
 }
 
 main {
-    padding: 0 20%;
+    padding: 0 10%;
 }
 
 h1 {
     text-align: center;
     color: var(--rose);
     font-family: more_sugar;
-    font-size: 45px;
-    margin : 40px 80px;
+    font-size: 7vw;
 }
 
 p {
     text-align: center;
     font-family: poppins;
+    font-size: smaller;
+    margin: 8px 0;
+}
+
+.circle-container {
+    display: flex;
+    justify-content: center;
+}
+
+.circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--jaune);
 }
 
 .button-container {
     display: flex;
-    justify-content:space-between;
+    justify-content: center;
+    flex-wrap: wrap;
     font-family: more_sugar;
     font-size: 18px;
-    margin: 50px 0;
+    margin: 40px 0;
 }
 
 .bouton1 {
     display: flex;
-    align-items: center;
     background-color: var(--orange);
     color: white;
     text-align: center;
     border-radius: 50px; 
     width: 200px;
+    height: 54px;
     padding: 10px 30px;
+    margin: 10px 5px;
     text-decoration: none;
 }
 
 .bouton2 {
     display: flex;
-    align-items: center;
     background-color: var(--rose_pale);
     color: var(--mauve);
     text-align: center;
     border-radius: 50px; 
     width: 200px;
+    height: 54px;
     padding: 10px 30px;
+    margin: 10px 5px;
     text-decoration: none;
+}
+
+
+@media screen and (min-width: 600px){
+    main {
+        padding: 0 20%;
+    }
+    h1 {
+        font-size: 5vw;
+    }
+    p {
+        font-size: medium;
+    }
+}
+
+@media screen and (min-width: 900px){
+    h1 {
+        font-size: 45px;
+        margin: 40px 7vw;
+    }
+    .button-container{  
+        justify-content:space-between;
+    }
 }
