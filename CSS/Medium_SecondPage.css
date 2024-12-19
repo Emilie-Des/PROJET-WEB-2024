@@ -1,0 +1,44 @@
+@font-face {
+    font-family: more_sugar;
+    src: url(../fonts/more-sugar.regular.ttf);
+}
+
+@font-face {
+    font-family: poppins;
+    src: url(../fonts/poppins/Poppins-Regular.ttf);
+}
+main {
+    padding: 0 10%;
+}
+
+h1 {
+    text-align: center;
+    color: var(--rose);
+    font-family: more_sugar;
+    font-size: 7vw;
+}
+
+p {
+    text-align: center;
+    font-family: poppins;
+    font-size: smaller;
+    margin: 8px 0;
+}
+button {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-family: more_sugar;
+    font-size: 15px;
+    margin: 40px 0;
+    display: flex;
+    background-color: var(--orange);
+    color: var(--mauve);
+    text-align: center;
+    border-radius: 50px; 
+    width: 100px;
+    height: 44px;
+    padding: 10px 30px;
+    margin: 10px 5px;
+    text-decoration: none;
+}

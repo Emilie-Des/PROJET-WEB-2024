@@ -5,6 +5,7 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="CSS/Header.css" rel="stylesheet" />
+        <link href="CSS/Medium_SecondPage.css" rel="stylesheet" />
         <link href="CSS/Footer.css" rel="stylesheet" />
     </head>
     <body>
@@ -20,10 +21,14 @@
                 </ul>
             </nav>
         </header>
-        <main>
 
-            
+        <main>
+            <h1>Trouvez votre prochaine recette</h1>
+            <p>Entrez un nom de plat  pour voir les recettes correspondantes</p>
+            <input type="text" id="recipe-name" placeholder="Ex: pizza" />
+            <button onclick="fetchRecipes()">Rechercher</button>
         </main>
+        
         <footer class = "footer">
             <div class="footer-content">
                 <h3>Contacts</h3>
