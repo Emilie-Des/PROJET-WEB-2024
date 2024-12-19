@@ -7,15 +7,17 @@
     font-family: poppins;
     src: url(../fonts/poppins/Poppins-Regular.ttf);
 }
+
 main {
     padding: 0 10%;
+    min-height: 60vh; 
 }
 
 h1 {
     text-align: center;
     color: var(--rose);
     font-family: more_sugar;
-    font-size: 7vw;
+    font-size: vw;
 }
 
 p {
@@ -24,8 +26,16 @@ p {
     font-size: smaller;
     margin: 8px 0;
 }
+.recherche {
+    display: flex;   
+    justify-content: center;
+    align-items: center;        
+    gap: 10px;                     
+    margin: 20px auto;       
+}
 button {
     display: flex;
+    border: none;
     justify-content: center;
     flex-wrap: wrap;
     font-family: more_sugar;
