@@ -1,8 +1,11 @@
 footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; 
     background-color: var(--mauve);
     color: var(--jaune);
     font-family: gliker;
     padding: 20px;
+}
+p{
+    text-align: left;
 }
