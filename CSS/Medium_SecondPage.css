@@ -52,3 +52,24 @@ button {
     margin: 10px 5px;
     text-decoration: none;
 }
+
+#recipe-list {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.recipe-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+    text-align: center;
+    box-sizing: border-box;
+}
+.recipe-card img {
+    max-width: 100%;
+    height: auto;
+}
+.recipe-card h3 {
+    font-size: 1.2em;
+}
