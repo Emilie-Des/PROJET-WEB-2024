@@ -43,9 +43,9 @@ function displayRecipes(meals) {
         recipeCard.innerHTML = `
             <h3>${meal.strMeal}</h3>
             <img src="${meal.strMealThumb}" alt="${meal.strMeal}" />
-            <ul><li> ${meal.strIngredient1} </li>
-                <li> ${meal.strIngredient2} </li></ul>
-        `;//pour les ingrédients on va plutôt faire la liste et rajouter les éléments avec du .createElement dans une boucle
+            <p><a href="${meal.strSource}" target="_blank">Voir la recette complète</a></p>
+            ${meal.strYoutube ? `<p><a href="${meal.strYoutube}" target="_blank">Vidéo YouTube</a></p>` : ''}
+        `;
         
         // Ajouter la carte à la liste des recettes
         recipeListDiv.appendChild(recipeCard);
