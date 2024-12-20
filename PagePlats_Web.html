@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title> Projet Web en groupe </title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="CSS/Header.css" rel="stylesheet" />
+        <link href="CSS/Medium_SecondPage.css" rel="stylesheet" />
+        <link href="CSS/Footer.css" rel="stylesheet" />
+    </head>
+    <body>
+        <header class = "top-bar">
+            <div class="logo">
+                <img src="Images/signet-icon.png" alt="Logo TonMiMar"/>
+                <span id="nom">Ton<span id="mi">Mi</span>Mar</span>
+            </div>
+            <nav class="navigation">
+                <ul>
+                    <li><a href="PageAcceuil_Web.html">Accueil</a></li>
+                    <li><a href="LINK">Menu</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <h1>Trouvez votre prochaine recette</h1>
+            <p>Entrez un nom de plat (en anglais) pour voir les recettes correspondantes</p>
+            <div class="search">
+                <input type="text" id="recipe-name" placeholder="Ex: pizza" />
+                <button onclick="fetchRecipes()">Rechercher</button>
+            </div>
+            <div id="recipe-list"></div>
+            
+        </main>
+        
+        <footer class = "footer">
+            <div class="footer-content">
+                <h2>Contacts</h2>
+                Téléphone : 01.23.45.67.89<br>
+                Mail : tonmimar@gmail.com<br>
+                Adresse : 5 boulevard Copernic, Champs-sur-Marne
+            </div>
+            <div class="footer-content">
+                <h2>Source</h2>
+                The Meal DB Api<br>
+                Lien : <a href="https://www.themealdb.com/api.php" target="_blank">https://www.themealdb.com/api.php</a>
+            </div>
+        </footer>
+    </body>
+    
+</html>
+<script src="JS/JS_SecondPage.js"></script>
