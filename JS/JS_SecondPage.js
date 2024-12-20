@@ -43,7 +43,7 @@ function displayRecipes(meals) {
         recipeCard.innerHTML = `
             <img src="${meal.strMealThumb}" alt="${meal.strMeal}" />
             <div>
-            <h2>${meal.strMeal}</h2>
+            <h2 onclick="openPopup()">${meal.strMeal}</h2>
             <a href="${meal.strSource}" target="_blank">Voir la recette complète</a><br>
             ${meal.strYoutube ? `<a href="${meal.strYoutube}" target="_blank">Vidéo YouTube</a>` : ''}
             </div>
@@ -51,5 +51,15 @@ function displayRecipes(meals) {
         
         // Ajouter la carte à la liste des recettes
         recipeListDiv.appendChild(recipeCard);
-    });
+    });    
+}
+
+// Function to open the popup
+function openPopup() {
+    popup_container.style.display = 'block';
+}
+
+// Function to close the popup
+function closePopup() {
+    popup_container.style.display = 'none';
 }

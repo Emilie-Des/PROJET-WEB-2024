@@ -15,6 +15,7 @@ footer {
 footer h2{
     font-family: gliker;
     font-size: medium;
+    letter-spacing: 1px;
 }
 
 footer a {
