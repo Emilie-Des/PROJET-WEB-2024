@@ -41,10 +41,12 @@ function displayRecipes(meals) {
         
         // Ajouter les informations sur la recette
         recipeCard.innerHTML = `
-            <h2>${meal.strMeal}</h2>
             <img src="${meal.strMealThumb}" alt="${meal.strMeal}" />
+            <div>
+            <h2>${meal.strMeal}</h2>
             <a href="${meal.strSource}" target="_blank">Voir la recette complète</a><br>
             ${meal.strYoutube ? `<a href="${meal.strYoutube}" target="_blank">Vidéo YouTube</a>` : ''}
+            </div>
         `;
         
         // Ajouter la carte à la liste des recettes

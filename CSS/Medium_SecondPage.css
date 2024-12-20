@@ -24,6 +24,7 @@ p {
     text-align: center;
     font-family: poppins;
     margin: 8px 0;
+    font-size: smaller;
 }
 
 input {
@@ -66,17 +67,22 @@ button {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    margin-bottom: 15px;
 }
 .recipe-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
     border: 5px dashed var(--rose_pale);
     padding: 10px;
     margin: 10px;
-    width: 200px;
+    width: 80vw;
     text-align: center;
     box-sizing: border-box;
 }
 .recipe-card img {
-    max-width: 100%;
+    max-width: 50%;
     height: auto;
 }
 .recipe-card h2 {
@@ -100,6 +106,19 @@ button {
     h1 {
         font-size: 5vw;
     }
+
+    p {
+        font-size: medium;
+    }
+
+    .recipe-card {
+        flex-direction: column;
+        width : 200px;
+    }
+
+    .recipe-card img {
+        max-width : 100%;
+    }
 }
 
 @media screen and (min-width: 900px){
@@ -108,3 +127,4 @@ button {
         margin: 40px 7vw;
     }
 }
+
