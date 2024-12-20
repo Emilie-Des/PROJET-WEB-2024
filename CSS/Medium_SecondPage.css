@@ -17,16 +17,24 @@ h1 {
     text-align: center;
     color: var(--rose);
     font-family: more_sugar;
-    font-size: vw;
+    font-size: 7vw;
 }
 
 p {
     text-align: center;
     font-family: poppins;
-    font-size: smaller;
     margin: 8px 0;
 }
-.recherche {
+
+input {
+    border-radius: 10px;
+    border-color: var(--jaune);
+    border-style: solid;
+    padding: 2px;
+    font-family: poppins;
+}
+
+.search {
     display: flex;   
     justify-content: center;
     align-items: center;        
@@ -57,9 +65,10 @@ button {
     margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 .recipe-card {
-    border: 10px dotted var(--rose_pale);
+    border: 5px dashed var(--rose_pale);
     padding: 10px;
     margin: 10px;
     width: 200px;
@@ -70,8 +79,32 @@ button {
     max-width: 100%;
     height: auto;
 }
-.recipe-card h3 {
+.recipe-card h2 {
     font-size: 1.2em;
     font-family: gliker;
     color: var(--rose);
+    letter-spacing: 2px;
+}
+
+.recipe-card a {
+    color: black;
+    text-decoration: none;
+    font-family: poppins;
+    font-size: 15px;
+}
+.recipe-card a:hover {
+    color: var(--orange)
+}
+
+@media screen and (min-width: 600px){
+    h1 {
+        font-size: 5vw;
+    }
+}
+
+@media screen and (min-width: 900px){
+    h1 {
+        font-size: 45px;
+        margin: 40px 7vw;
+    }
 }
