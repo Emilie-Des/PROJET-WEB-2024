@@ -17,7 +17,7 @@ h1 {
     text-align: center;
     color: var(--rose);
     font-family: more_sugar;
-    font-size: 7vw;
+    font-size: 5vw;
 }
 h3{
     text-align: center;
@@ -28,7 +28,8 @@ h3{
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
-    margin: 0 auto;
+    padding: 10px;
+    margin: 10px;
     max-width: 1000px;
 }
 
@@ -38,9 +39,9 @@ h3{
 }
 
 .menu-container img {
-    width: 100px;
-    height: 100px;
-    border-radius: 10px;
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
     background-color: #d3d3d3; 
 }
 
