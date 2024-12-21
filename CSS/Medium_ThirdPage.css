@@ -10,50 +10,80 @@
 
 main {
     padding: 0 10%;
-    min-height: 60vh; 
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 h1 {
     text-align: center;
     color: var(--rose);
     font-family: more_sugar;
-    font-size: 3vw;
+    font-size: 7vw;
 }
-h3{
+
+main h2{
     text-align: center;
-    color: var(--rose);
+    color: var(--orange);
     font-family: more_sugar;
+    font-size: 5vw;
 }
+
 .menu-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    padding: 10px;
-    margin: 10px;
-    max-width: 1000px;
+    display: contents;
+    font-family: poppins;
 }
 
 .menu-container div {
     text-align: center;
-    width: 30%;
+    padding: 0.5vw;
+    margin: 0.5vw;
 }
 
 .menu-container img {
     width: 300px;
     height: 300px;
-    border-radius: 5px;
+    border-radius: 8px;
     background-color: #d3d3d3; 
 }
 
 .menu-container p {
     font-size: 16px;
     font-weight: bold;
-    font-family: poppins;
     margin: 10px 0;
 }
 
 .menu-container a {
-    text-decoration: none;
-    color: var(--rose);
+    color: black;
     font-size: 14px;
+}
+
+@media screen and (min-width: 600px){
+    h1 {
+        font-size: 5vw;
+    }
+
+    p {
+        font-size: medium;
+    }
+
+    main h2 {
+        font-size: 3vw;
+    }
+}
+
+@media screen and (min-width: 900px){
+    h1 {
+        font-size: 45px;
+        margin: 40px 7vw;
+    }
+
+    .menu-container {
+        display: flex;
+    }
+
+    main h2 {
+        font-size: 30px;
+    }
 }
