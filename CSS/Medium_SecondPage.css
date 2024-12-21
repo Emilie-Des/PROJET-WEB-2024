@@ -111,32 +111,56 @@ button {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     background: rgba(0, 0, 0, 0.5);
 }
 
 #popup {
     display: flex;
-    
+    flex-wrap: wrap;
     font-family: poppins;
+
     position: absolute;
+    overflow:scroll;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
     background: white;
-    padding: 20px;
+    padding: 10px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 80vw;
+    max-height: 90vh;
+}
+
+#popup >* {
+    margin: 10px;
 }
 
 #close {
     position: absolute;
     top: 10px;
-    right: 10px;
-    font-size: 20px;
+    right: 15px;
+    font-size: 30px;
     cursor: pointer;
     color: var(--orange);
+}
+
+#popup h2 {
+    color: var(--mauve);
+    font-family: gliker;
+}
+
+#popup h3 {
+    color: var(--rose);
+    font-family: more_sugar;
+}
+
+#popup p,ul {
+    text-align: justify;
+    font-size: small;
 }
 
 @media screen and (min-width: 600px){
@@ -156,11 +180,27 @@ button {
     .recipe-card img {
         max-width : 100%;
     }
+
+    #popup {
+        flex-wrap: nowrap;
+    }
 }
 
 @media screen and (min-width: 900px){
     h1 {
         font-size: 45px;
         margin: 40px 7vw;
+    }
+
+    #popup_container {
+        position: fixed;
+    }
+
+    #popup {
+        width: 60vw;
+    }
+
+    #popup p,ul {
+        font-size: medium;
     }
 }

@@ -71,7 +71,7 @@ function openPopup(mealId) {
                     const ingredient = meal[`strIngredient${i}`];
                     const measure = meal[`strMeasure${i}`];
                     if (ingredient) {
-                        ingredients.push(`${measure} ${ingredient}`);
+                        ingredients.push(`${measure} of ${ingredient}`);
                     }
                 }
 
@@ -84,7 +84,7 @@ function openPopup(mealId) {
                     <h2>${meal.strMeal}</h2>
                     <h3>Ingrédients :</h3>
                     <ul>
-                        ${ingredients.map(ingredient => `<li>${ingredient}</li>`).join('')}
+                        ${ingredients.map(ingredient => `<li><nobr>${ingredient}</nobr></li>`).join('')}
                     </ul>
                 </div>
                 <div>
