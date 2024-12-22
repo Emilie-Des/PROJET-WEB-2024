@@ -1,10 +1,12 @@
 document.addEventListener("DOMContentLoaded", function () {
     const menuItems = document.querySelectorAll(".menu-container div");
 
+    const mealCategories = ["Chicken", "Beef", "Miscellaneous", "Seafood", "Lamb", "Goat", "Pasta", "Pork", "Vegetarian"]
+    const randomCategory = mealCategories[Math.floor(Math.random() * mealCategories.length)]
     
     const apiCategories = {
         "entrée": "Starter", 
-        "plat": "Chicken", 
+        "plat": randomCategory, 
         "dessert": "Dessert"
     };
 
